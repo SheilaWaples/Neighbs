@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   # get 'pages/index'
 devise_scope :user do
 	get 'login', to: 'devise/sessions#new'
+	get 'signup', to: 'devise/registrations#new'
+	
   root 'pages#index'
 end
 end
